@@ -5,9 +5,42 @@
 //------------------------------
 
 // Put the assignment code here
-
+//4 double tpes a b c d
+//main has pqr
+#include <iostream>
 class Quaternion {
+  public:
+  double a, b, c, d;
+Quaternion( double p,double q,double r){
+  a = p;
+  b = q;
+  c = r;
+}
+
+//= operator
+ bool operator=(const Quaternion){
+if ((p->a==this->a)&&(p->b==this->b)&&(p->c==this->c)&&(p->d==this->d))
+ return true;
+ else
+ return false;}
+
+//+ operator
+ Quaternion operator+(const Quaternion){
+
+return Quaternion;}
+ 
+//- operator
+ Quaternion operator-(const Quaternion){
+
+return Quaternion;}
+
+//* operator
+ Quaternion operator*(const Quaternion){
+
+ return Quaternion;}
 };
+
+
 
 //------------------------------
 //   DO NOT MODIFY TEST CASES
