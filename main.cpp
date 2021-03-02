@@ -8,34 +8,53 @@
 //4 double tpes a b c d
 //main has pqr
 #include <iostream>
+
 class Quaternion {
   public:
   double a, b, c, d;
+  //pqr in test cases 
 Quaternion( double p,double q,double r){
-  a = p;
-  b = q;
-  c = r;
+  p = a;
+  q = b;
+  r = c;
 }
 
-//= operator
- bool operator=(const Quaternion){
-if ((p->a==this->a)&&(p->b==this->b)&&(p->c==this->c)&&(p->d==this->d))
+// bool = operator
+ bool operator=(const Quaternion& p){
+if ((p->a == this->a) && (p -> b == this-> b)&&(p ->c == this-> c))
+
  return true;
- else
+
  return false;}
 
 //+ operator
  Quaternion operator+(const Quaternion){
+
+Quaternion r;
+
+r.a = p.a + this -> a;
+
+r.b = p.b + this -> b;
+
+r.c = p.c + this -> c;
 
 return Quaternion;}
  
 //- operator
  Quaternion operator-(const Quaternion){
 
+Quaternion r;
+
+r.a = p.a - this -> a;
+
+r.b = p.b - this -> b;
+
+r.c = p.c - this -> c;
+
 return Quaternion;}
 
 //* operator
- Quaternion operator*(const Quaternion){
+ double operator*(const Quaternion){
 
  return Quaternion;}
 };
